@@ -7,3 +7,82 @@
 1441px e acima – Telas de desktop grandes ou monitores ultrawide.
 */
 
+/*Pré definicoes*/
+:root {
+    --cor0:#eeeded;
+    --cor1:#9A9A9A;
+    --cor2:#43484C;
+    --cor3:#55A08B;
+    --cor4:#FE0000;
+    --branco:#ffffff;
+    --preto:#000000;
+
+
+    --fonte-principal:"Poppins", sans-serif; 
+}
+
+* {
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*Estilos Globais*/
+body {
+    background-color: var(--cor0);
+}
+
+
+
+/*Header*/
+header {
+    background-color: var(--preto);
+    display: flex;
+    height: 100px;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.container-logo,
+.container-pesquisa,
+.container-nav-header {
+    flex: 1;
+}
+
+.container-logo {
+    text-align: left;
+}
+.container-logo a {
+    color: var(--branco);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.container-pesquisa {
+    text-align: center;
+    display: flex;
+}
+.container-pesquisa input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    text-indent: 10px;
+}
+.container-pesquisa button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--cor4);
+    cursor: pointer;
+}
+.container-pesquisa button img {
+    height: 30px;
+    width: 30px;
+}
