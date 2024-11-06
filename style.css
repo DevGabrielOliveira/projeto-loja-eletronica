@@ -36,6 +36,21 @@ body {
     background-color: var(--cor0);
 }
 
+.sec-beneficios,
+.sec-categorias,
+.sec-lancamentos,
+.sec-marcas,
+.sec-cadastro {
+    width: 80%;
+    margin: 100px auto;
+}
+
+body h1 {
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 20px;
+}
+
 
 
 /*Header*/
@@ -63,11 +78,11 @@ header {
 }
 
 .container-pesquisa {
-    text-align: center;
     display: flex;
+    justify-content: center;
 }
 .container-pesquisa input {
-    width: 300px;
+    width: 400px;
     height: 40px;
     border: none;
     border-radius: 5px 0 0 5px;
@@ -81,8 +96,138 @@ header {
     border-radius: 0 5px 5px 0;
     background-color: var(--cor4);
     cursor: pointer;
+    transition: 0,2s;
+}
+.container-pesquisa button:hover {
+    opacity: 0.8;
 }
 .container-pesquisa button img {
     height: 30px;
     width: 30px;
+}
+
+.container-nav-header {
+    text-align: right;
+}
+.container-nav-header ul {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+.container-nav-header ul a {
+    color: var(--branco);
+    font-size: 0.8em;
+}
+.container-nav-header ul a:hover{
+    color: var(--cor1);
+    transition: 0.2s;
+}
+
+
+/*Container-nav-categorias*/
+.container-nav-categorias{
+    background-color: var(--preto);
+    opacity: 0.9;
+    height: 30px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-nav-categorias ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.container-nav-categorias ul a {
+    color: var(--branco);
+}
+.container-nav-categorias ul a:hover{
+    color: var(--cor4);
+    transition: 0.2s;
+}
+
+
+/*Sec Inicio*/
+.sec-inicio .container-img-inicio {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.sec-inicio .container-img-inicio img {
+    width: 100%;
+}
+
+
+/*Sec Beneficios*/
+.sec-beneficios{
+    background-color: var(--branco);
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 30px;
+}
+.sec-beneficios .itens-beneficios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.sec-beneficios .itens-beneficios p {
+    font-weight: 600;
+}
+
+
+/*Sec Categorias*/
+.sec-categorias .container-categorias {
+    display: flex;
+    gap: 10px;
+}
+.sec-categorias .container-categorias .itens-categorias{
+    background-color: var(--branco);
+    padding: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.4s ease;
+}
+.sec-categorias .container-categorias .itens-categorias:hover {
+    transform: scale(102%);
+}
+.sec-categorias .container-categorias .itens-categorias h2 {
+    color: var(--preto);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.sec-categorias .container-categorias .itens-categorias p {
+    color: var(--cor1);
+    text-align: justify;
+}
+
+
+/*Sec Lançamentos*/
+.sec-lancamentos .container-lancamentos {
+    display: flex;
+    gap: 10px; 
+}
+.sec-lancamentos .container-lancamentos .itens-lancamentos{
+    background-color: var(--branco);
+    width: 50%;
+    height: 400px;
+    padding: 20px;
+    transition: 0.4s ease;
+    overflow: hidden;
+}
+.sec-lancamentos .container-lancamentos .itens-lancamentos:hover {
+    transform: scale(102%);
+    transform-origin: center;
+}
+.sec-lancamentos .container-lancamentos .itens-lancamentos:hover img {
+    transform: scale(102%);
+    transition: 0.5s ease;
+}
+.sec-lancamentos .container-lancamentos .itens-lancamentos img {
+    height: 60%;
+    width: 100%;
 }

@@ -44,7 +44,14 @@
     <main>
         <section class="sec-inicio">
             <div class="container-img-inicio">
-                <img src="" alt="imagem inicio">
+                <picture>
+                    <source media="(min-width: 1441px)" srcset="midias/imagem1920x450.png" type="image/png">
+                    <source media="(min-width: 1281px)" srcset="midias/imagem1440x400.png" type="image/png">
+                    <source media="(min-width: 1025px)" srcset="midias/imagem1280x380.png" type="image/png">
+                    <source media="(min-width: 769px)" srcset="midias/imagem1024x350.png" type="image/png">
+                    <source media="(min-width: 481px)" srcset="midias/imagem768x250.png" type="image/png">
+                    <img src="midias/imagem480x150.png" alt="">
+                </picture>
             </div>
         </section>
         <section class="sec-beneficios">
@@ -65,34 +72,42 @@
                 <p>Em até 12x<br>sem juros</p>
             </div>
         </section>
+
         <section class="sec-categorias">
             <h1>CATEGORIAS</h1>
             <div class="container-categorias">
-                <div class="itens-categorias">
-                    <h2>Celulares</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, laudantium error harum consequatur.</p>
-                </div>
-                <div class="itens-categorias">
-                    <h2>Computadores</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, laudantium error harum consequatur.</p>
-                </div>
-                <div class="itens-categorias">
-                    <h2>Periféricos</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, laudantium error harum consequatur.</p>
-                </div>
+                <a href="#">
+                    <div class="itens-categorias">
+                        <h2>Celulares</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, laudantium error harum consequatur.</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="itens-categorias">
+                        <h2>Computadores</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, laudantium error harum consequatur.</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="itens-categorias">
+                        <h2>Periféricos</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, laudantium error harum consequatur.</p>
+                    </div>
+                </a>
             </div>
         </section>
+
         <section class="sec-lancamentos">
             <h1>LANÇAMENTOS</h1>
             <div class="container-lancamentos">
                 <div class="itens-lancamentos">
-                    <img src="" alt="imagem-lancamento">
+                    <img src="midias/foto iphone.png" alt="imagem-lancamento">
                     <h2>Galaxy Y</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     <button>Comprar</button>
                 </div>
                 <div class="itens-lancamentos">
-                    <img src="" alt="imagem-lancamento">
+                    <img src="midias/foto notebook.png" alt="imagem-lancamento">
                     <h2>Iphone 16</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     <button>Comprar</button>
