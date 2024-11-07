@@ -218,16 +218,132 @@ header {
     padding: 20px;
     transition: 0.4s ease;
     overflow: hidden;
-}
-.sec-lancamentos .container-lancamentos .itens-lancamentos:hover {
-    transform: scale(102%);
-    transform-origin: center;
-}
-.sec-lancamentos .container-lancamentos .itens-lancamentos:hover img {
-    transform: scale(102%);
-    transition: 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .sec-lancamentos .container-lancamentos .itens-lancamentos img {
     height: 60%;
     width: 100%;
+}
+.sec-lancamentos .container-lancamentos .itens-lancamentos img:hover {
+    transform: scale(102%);
+    transition: 0.5s ease;
+}
+.sec-lancamentos .container-lancamentos .itens-lancamentos p {
+    color: var(--cor1);
+}
+.sec-lancamentos .container-lancamentos .itens-lancamentos .div-comprar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    align-items: flex-end;
+}
+.sec-lancamentos .container-lancamentos .itens-lancamentos .div-comprar p {
+    color: var(--preto);
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+}
+.sec-lancamentos .container-lancamentos .itens-lancamentos .div-comprar button {
+    width: 150px;
+    height: 35px;
+    background-color: var(--branco);
+    border-radius: 10px;
+    border: 2px solid var(--cor4);
+    color: var(--cor4);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.sec-lancamentos .container-lancamentos .itens-lancamentos .div-comprar button:hover {
+    transform: scale(102%);
+    background-color: var(--cor4);
+    color: var(--branco);
+}
+
+
+
+/*Sec Marcas*/
+.sec-marcas .container-marcas {
+    background-color: var(--branco);
+    padding: 30px;
+}
+.sec-marcas .container-marcas ul {
+    display: flex;
+    justify-content:space-around ;
+}
+
+
+
+/*Sec Cadastro*/
+.sec-cadastro .formulario {
+    background-color: var(--branco);
+    text-align: center;
+    padding: 30px;
+}
+.sec-cadastro .formulario input {
+    height: 40px;
+    width: 400px;
+    text-indent: 10px;
+    border: 1px solid var(--cor3);
+    border-radius: 10px;
+    background-color: var(--cor0);
+}
+.sec-cadastro .formulario button {
+    height: 40px;
+    width: 100px;
+    background-color: var(--cor3);
+    color: var(--branco);
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sec-cadastro .formulario button:hover {
+    opacity: 0.9;
+}
+
+
+
+/*Footer*/
+footer {
+    background-color: var(--preto);
+}
+footer .footer1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+footer .footer1 .itens-footer1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+footer .footer1 .itens-footer1 h3 {
+    color: var(--branco);
+}
+footer .footer1 .itens-footer1 p {
+    color: var(--cor1);
+}
+footer .footer1 .itens-footer1 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+footer .footer1 .itens-footer1 a {
+    color: var(--cor1);
+}
+
+.footer2 {
+    border-top: 1px solid var(--cor0);
+    width: 80%;
+    margin: auto;
+}
+.footer2 p {
+    color: var(--cor1);
+    text-align: center;
+    padding: 5px;
 }
