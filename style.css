@@ -152,11 +152,36 @@ header {
 .sec-inicio .container-img-inicio {
     width: 100%;
     margin-bottom: 30px;
+    position: relative;
 }
 .sec-inicio .container-img-inicio img {
     width: 100%;
 }
-
+.sec-inicio .container-img-inicio .conteudo-sobre-imagem {
+    position: absolute;
+    top: 50%; /* Alinha verticalmente ao centro */
+    left: 50%; /* Alinha horizontalmente ao centro */
+    transform: translate(-50%, -50%); /* Centraliza exatamente */
+    text-align: center; /* Centraliza o texto */
+    color: var(--cor0);
+}
+.sec-inicio .container-img-inicio .conteudo-sobre-imagem h1 {
+    font-size: 4em;
+    text-shadow: 10px 10px 10px var(--preto);
+}
+.sec-inicio .container-img-inicio .conteudo-sobre-imagem button {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--cor0);
+    color: var(--preto);
+    cursor: pointer;
+}
+.sec-inicio .container-img-inicio .conteudo-sobre-imagem button:hover {
+    transform: scale(102%);
+}
 
 /*Sec Beneficios*/
 .sec-beneficios{
@@ -336,7 +361,9 @@ footer .footer1 .itens-footer1 ul{
 footer .footer1 .itens-footer1 a {
     color: var(--cor1);
 }
-
+footer .footer1 .itens-footer1 a:hover {
+    text-decoration: underline;
+}
 .footer2 {
     border-top: 1px solid var(--cor0);
     width: 80%;
